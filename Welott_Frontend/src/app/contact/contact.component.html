@@ -1,0 +1,233 @@
+<app-head></app-head>
+<body id="contact">
+  <div id="container">
+
+    <header id="site_header">
+      <div class="contain">
+          <a href="/"><img id="logo" alt="W.E. Lott company" src="../../assets/images/welott.svg" /></a>
+          <div id="phone"><a href="tel:+14195639400">(419) 563-9400</a> <span><a href="/industries/product-galleries">View Gallery</a><!--<a href="/contact">REQUEST A QUOTE</a>--></span></div>
+          <div id="mnt">
+              <a class="mtoggle" href="#" title="Menu"><svg version="1.1" id="menu_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="12px" viewBox="0 0 18 12" enable-background="new 0 0 18 12" xml:space="preserve"><path fill="none" /><g id="Layer_x25_201"><rect width="18" height="2"/><rect y="5" width="18" height="2"/><rect y="10" width="18" height="2"/></g><path fill="none" /></svg></a>
+          </div>
+      </div>
+  </header>
+
+    <nav id="main_nav">
+      <div class="centeredmenu">
+        <ul class="nav menu mod-list">
+          <li class="item-101 default"><a href="/">Home</a></li>
+          <li class="item-104"><a href="/about">About</a></li>
+          <li class="item-105"><a href="/products">Products</a></li>
+          <li class="item-106 parent"><a href="/industries">Industries</a></li>
+          <li class="item-107"><a href="/capabilities">Capabilities</a></li>
+          <li class="item-108"><a href="/facilities">Facilities</a></li>
+          <li class="item-109"><a href="/quality-control">Quality Control</a></li>
+          <li class="item-110 current active"><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="contact_bg">
+      <section class="content first contain">
+        <article class="item-page">
+          <div class="the_address contact_box">
+            <h3>W.E. LOTT Company</h3>
+            <p>1432 Isaac Beal Road<br>Bucyrus, Ohio 44820</p>
+            <p><b>T</b> <a href="tel:4195639400" class="tel">(419) 563-9400</a><br><b>F</b> (419) 562-9411</p>
+          </div>
+
+          <div class="the_form contact_box">
+            <h5>REQUEST A QUOTE</h5>
+            <p>Your online security is important to us. Please contact us directly at (419) 563-9400, or provide the
+              following information so we can connect you directly to our secure RFQ page.</p>
+
+            <div class="gbs3">
+              <div *ngIf="!submissionResponse">
+                <form enctype="multipart/form-data" (ngSubmit)="onSubmit()" [formGroup]="contactForm"
+                  class="chronoform form-horizontal">
+
+                  	<!-- Error Message for Captcha -->
+									<div *ngIf="captchaInvalidMessage" class="error-message"
+                  style="color: #D63301; background-color: #FFCCBA; padding: 10px; margin-bottom: 10px; font-weight: bold;">
+                  {{ captchaInvalidMessage }}
+                </div>
+
+                  <!-- Name Field -->
+                  <div class="form-group gcore-form-row" id="form-row-name">
+                    <div class="gcore-input gcore-display-table" id="fin-name">
+                      <input name="Name" id="name" placeholder="Name" maxlength="200"
+                        class="validate[required] form-control A" type="text" formControlName="name"
+                        (focus)="clearError('name')" />
+                      <!-- Tooltip for Name Field -->
+                      <div *ngIf="getErrorMessage('name')" class="gtooltip gvalidation-error-tip" tid="gval">
+                        <div class="gtooltip-close" (click)="closeTooltip('name')">×</div>
+                        <div class="gtooltip-content">
+                          <span class="gvalidation-error-text">{{ getErrorMessage('name') }}</span>
+                        </div>
+                        <div class="gtooltip-arrow"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Company Field -->
+                  <div class="form-group gcore-form-row" id="form-row-company">
+                    <div class="gcore-input gcore-display-table" id="fin-company">
+                      <input name="Company" id="company" placeholder="Company" maxlength="200"
+                        class="validate[required] form-control A" type="text" formControlName="company"
+                        (focus)="clearError('company')" />
+                      <!-- Tooltip for Company Field -->
+                      <div *ngIf="getErrorMessage('company')" class="gtooltip gvalidation-error-tip" tid="gval">
+                        <div class="gtooltip-close" (click)="closeTooltip('company')">×</div>
+                        <div class="gtooltip-content">
+                          <span class="gvalidation-error-text">{{ getErrorMessage('company') }}</span>
+                        </div>
+                        <div class="gtooltip-arrow"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Email Field -->
+                  <div class="form-group gcore-form-row" id="form-row-email">
+                    <div class="gcore-input gcore-display-table" id="fin-email">
+                      <input name="Email" id="email" placeholder="Email" class="validate[required,email] form-control A"
+                        type="email" formControlName="email" (focus)="clearError('email')" />
+                      <!-- Tooltip for Email Field -->
+                      <div *ngIf="getErrorMessage('email')" class="gtooltip gtooltip-centered gvalidation-error-tip"
+                        tid="gval">
+                        <div class="gtooltip-content">
+                          <span class="gtooltip-close" (click)="closeTooltip('email')">x</span>
+                          <span class="gvalidation-error-text">{{ getErrorMessage('email') }}</span>
+                        </div>
+                        <div class="gtooltip-arrow"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Phone Number Field -->
+                  <div class="form-group gcore-form-row" id="form-row-phonenumber">
+                    <div class="gcore-input gcore-display-table" id="fin-phonenumber">
+                      <input name="Phone" id="phonenumber" placeholder="Phone"
+                        class="validate[required,phone,phone_inter] form-control A" type="text" formControlName="phone"
+                        (focus)="clearError('phone')" />
+                      <!-- Tooltip for Phone Field -->
+                      <div *ngIf="getErrorMessage('phone')" class="gtooltip gtooltip-centered gvalidation-error-tip"
+                        tid="gval">
+                        <div class="gtooltip-content">
+                          <span class="gtooltip-close" (click)="closeTooltip('phone')">x</span>
+                          <span class="gvalidation-error-text">{{ getErrorMessage('phone') }}</span>
+                        </div>
+                        <div class="gtooltip-arrow"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Message Field -->
+                  <div class="form-group gcore-form-row" id="form-row-message">
+                    <div class="gcore-input gcore-display-table" id="fin-message">
+                      <textarea name="Message" id="message" placeholder="Message" rows="3" cols="40"
+                        class="form-control A" formControlName="message"></textarea>
+                    </div>
+                  </div>
+
+                    <!-- Captcha Field -->
+
+                    <div class="form-group gcore-form-row" id="form-row-captcha">
+                      <div class="gcore-subinput-container-wide" id="fitem">
+                        <label for="captcha1" class="control-label gcore-label-top">
+                          Enter Code
+                          <span
+                            style="color: #ff0000; font-size: 16px; margin-left: 2px;">*</span>
+                        </label>
+  
+                        <div class="gcore-input-wide pull-left gcore-sub-input gcore-display-table"
+                          id="fin-captcha1">
+                          <input #captchaInput class="form-control A" type="text" id="captcha1"
+                            formControlName="captcha" (focus)="clearError('captcha')"
+                            placeholder="" />
+  
+  
+                          <div class="captcha-display"
+                            style=" font-weight: bolder; font-size: 28px; margin-bottom: 10px; color: black;">
+                            {{ actualCaptcha }}
+                          </div>
+  
+                          <!-- Tooltip for Captcha Field -->
+                          <div class="gtooltip gvalidation-error-tip captcha-tooltip" tid="gval"
+                          *ngIf="contactForm.get('captcha')?.invalid && (contactForm.get('captcha')?.touched || submissionError)"
+                          [ngClass]="{'visible': contactForm.get('captcha')?.invalid}">
+                          <div class="gtooltip-close" (click)="closeTooltip('captcha')">×</div>
+                          <div class="gtooltip-content">
+                            <span class="gvalidation-error-text">This field is required.</span>
+                          </div>
+                          <div class="gtooltip-arrow-border gtooltip-arrow-border-top"
+                            style="left: 56px; bottom: -9px;"></div>
+                          <div class="gtooltip-arrow gtooltip-arrow-top" style="left: 56px; bottom: -7px;"></div>
+                        </div>
+                        
+                        </div>
+                      </div>
+                      
+  
+                     
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="form-group gcore-form-row" id="form-row-submit">
+                    <div class="gcore-input gcore-display-table" id="fin-submit">
+                      <button type="submit" id="submit" class="form-control A">Submit</button>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+
+              <!-- Thank You Message -->
+              <div *ngIf="submissionResponse" class="thank-you-message">
+                <h1>Thank You!</h1>
+                <p>Someone will contact you soon.</p>
+              </div>
+
+              <!-- Credits -->
+              <p class="chrono_credits">
+                <a href="http://www.chronoengine.com" target="_blank">Powered by ChronoForms - ChronoEngine.com</a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+
+
+    <footer id="footer">
+      <div class="contain">
+        <div class="address">
+          <h4>W.E. LOTT Company</h4>
+          <p>1432 Isaac Beal Road | Bucyrus, Ohio 44820
+            <br>T (<a href="tel:+14195639400" class="tel">419) 563-9400</a> | F (419) 562-9411
+            <br><a href="https://www.linkedin.com/company/welott" target="_blank">LINKEDIN</a>
+          </p>
+        </div>
+        <div class="signup">
+          <h4>Looking for a quote?</h4>
+          <p>Provide us your email address and we will connect you to our secure ftp site.
+            <br><a href="/contact">Request a Quote</a>
+          </p>
+        </div>
+        <nav id="foot_nav">
+          <div class="footermenu">
+            <ul class="nav menu mod-list">
+              <li class="item-101 "><a href="/">Home</a></li>
+              <li class="item-104 "><a href="/about">About</a></li>
+              <li class="item-105"><a href="/products">Products</a></li>
+              <li class="item-106 parent"><a href="/industries">Industries</a></li>
+              <li class="item-107"><a href="/capabilities">Capabilities</a></li>
+              <li class="item-108"><a href="/facilities">Facilities</a></li>
+              <li class="item-109"><a href="/quality-control">Quality Control</a></li>
+              <li class="item-110 default current active"><a href="/contact">Contact</a></li>
+            </ul>
+
+          </div>
+        </nav>
+        <p class="copyright">Copyright &copy; 2024 W.E. LOTT Company</p>
+      </div>
+    </footer>

@@ -1,0 +1,326 @@
+
+
+/* Add a CSS reset if not present */
+* {
+    margin: 0;
+    padding: 0;
+   
+  }
+  html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline; }
+ 
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section {
+   display: block; }
+ 
+ body {
+   line-height: 1; }
+ 
+ ol, ul {
+   list-style: none; }
+ 
+ blockquote, q {
+   quotes: none; }
+ 
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+   content: '';
+   content: none; }
+ 
+ table {
+   border-collapse: collapse;
+   border-spacing: 0; }
+
+   
+ /* _____ GLOBAL DEFAULTS _____ */
+ html {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  background: #231f20; }
+
+*, *:before, *:after {
+  -moz-box-sizing: inherit;
+       box-sizing: inherit; }
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: open_sans, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #626366;
+  background-color: #fff; }
+
+#container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  min-height: 100%; 
+ }
+
+h1 {
+  font-size: 38px;
+  font-size: 2.375rem;
+  line-height: 1;
+  font-weight: 200;
+  text-align: center;
+  padding: 0;
+  margin: 48px 0 34px 0; }
+  h1 + h6 {
+    margin-top: -32px; }
+
+h2 {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 1.7;
+  font-weight: 700;
+  margin: 20px 0 5px 0;
+  color: #231f20; }
+  .center_it h2 {
+    color: #ba8748; }
+  .left h2, .right h2 {
+    color: #ba8748;
+    margin-bottom: 25px; }
+
+h3 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 500; }
+
+h4 {
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+h5 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 15px; }
+
+h6 {
+  font-size: 16px;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 0 30px 0; }
+
+a,
+a:visited {
+  color: #ba8748;
+  text-decoration: underline; }
+  a:hover,
+  a:visited:hover {
+    color: #231f20;
+    text-decoration: underline; }
+  a img,
+  a:visited img {
+    outline: none;
+    border: none; }
+
+ul {
+  list-style: disc;
+  list-style-position: outside;
+  margin-left: 20px; }
+
+p {
+  margin: 0 0 15px; }
+
+ul + p {
+  margin-top: 15px; }
+
+b, strong {
+  font-weight: bold; }
+
+i, em {
+  font-style: italic; }
+
+.contain {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; }
+  .contain:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.screen-reader-text {
+  display: none; }
+
+.button {
+  margin: 10px 0 !important;
+  padding: 6px 18px !important;
+  border: 1px #fc0 solid !important;
+  outline: none;
+  font-family: open_sans, Helvetica, Arial, sans-serif !important;
+  color: #fff !important;
+  display: inline-block !important;
+  text-decoration: none !important; }
+  .button:hover {
+    border: 1px #555 solid !important; }
+
+.submit {
+  background: #555 !important; }
+
+.gray {
+  background: #aaa !important; }
+
+.grayDark {
+  background: #555 !important; }
+
+.white {
+  color: #fff; }
+
+.steel {
+  color: #626366; }
+
+.iron {
+  color: #231f20; }
+
+.trends {
+  color: #ba8748; }
+/* Media Queries for iPad View (768px to 1024px) */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #footer {
+      display: flex; /* Use flexbox for layout */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+      text-align: center; /* Center text */
+  }
+
+  #footer .contain {
+      display: flex; /* Use flexbox inside the footer */
+      flex-wrap: wrap; /* Allow items to wrap */
+      justify-content: center; /* Center items in the footer */
+  }
+
+  #footer .address,
+  #footer .signup {
+      flex: 1 1 300px; /* Allow items to grow and shrink, with a base width */
+      margin: 10px; /* Add margin for spacing */
+  }
+
+  #foot_nav {
+      flex: 1 1 100%; /* Take full width */
+      margin: 10px 0; /* Add vertical margin */
+  }
+
+  #foot_nav .footermenu {
+      display: flex; /* Use flexbox for navigation items */
+      flex-wrap: wrap; /* Allow items to wrap */
+      justify-content: center; /* Center menu items */
+  }
+
+  #foot_nav .footermenu li {
+      margin: 0 10px; /* Horizontal margin for nav items */
+  }
+
+  .copyright {
+      margin-top: 20px; /* Space above copyright text */
+  }
+
+  /* Display centeredmenu on tablet and desktop */
+  .centeredmenu {
+      display: flex; /* Use flexbox for the menu */
+      justify-content: center; /* Center menu items */
+      margin: 10px 0; /* Margin for spacing */
+  }
+}
+
+/* Media Queries for Tablet View (768px to 1024px) */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #main_nav {
+      display: flex; /* Use flexbox for the navigation */
+      justify-content: center; /* Center the navigation items */
+      flex-wrap: wrap; /* Allow items to wrap if needed */
+      padding: 10px 0; /* Add some padding for spacing */
+  }
+
+  .nav.menu {
+      display: flex; /* Use flexbox for the menu */
+      justify-content: center; /* Center the menu items */
+      list-style-type: none; /* Remove default list styling */
+      padding: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+  }
+
+  .nav.menu li {
+      margin: 0 15px; /* Add horizontal margin for spacing between items */
+  }
+
+  .nav.menu li a {
+      text-decoration: none; /* Remove underline from links */
+      color: #000; /* Change the color as needed */
+      font-size: 16px; /* Adjust font size for better visibility */
+  }
+
+  /* Optional: Style for active/current item */
+  .nav.menu li.current a {
+      font-weight: bold; /* Make active link bold */
+      color: #007bff; /* Change color for active link */
+  }
+}
+
+/* Initial state of the navigation for mobile */
+#main_nav {
+  max-height: 0; /* Hide the menu by default */
+  overflow: hidden; /* Prevent overflow */
+  transition: max-height 0.5s ease; /* Transition for sliding effect */
+}
+
+/* Show the menu on mobile */
+#main_nav.visible {
+  max-height: 300px; /* Adjust this value to fit your content */
+}
+
+/* Always show the menu on larger screens */
+@media (min-width: 768px) {
+  #main_nav {
+    display: flex; /* Show the menu as flexbox on desktop */
+    max-height: none; /* No max-height restriction */
+    overflow: visible; /* Ensure overflow is visible */
+  }
+
+  /* Hide the toggle button on larger screens */
+  .mtoggle {
+    display: none; /* Hide the toggle button on larger screens */
+  }
+}
+/* Show the menu and toggle button on mobile */
+@media (max-width: 767px) {
+  #main_nav {
+    display: block; /* Show the menu on mobile */
+  }
+
+  .mtoggle {
+    display: block; /* Show the toggle button on mobile */
+  }
+
+  /* Additional styles for the toggle button */
+  .mtoggle {
+    cursor: pointer; /* Change cursor on hover */
+    /* Add more styling as needed */
+  }
+}

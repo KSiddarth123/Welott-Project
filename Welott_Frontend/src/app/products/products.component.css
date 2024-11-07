@@ -1,0 +1,1306 @@
+
+ 
+
+ @font-face {
+   font-family: 'open_sans';
+   src: url("../../assets/Fonts/OpenSans-Semibold-webfont.eot");
+   src: url("../../assets/Fonts/OpenSans-Semibold-webfont.eot") format("embedded-opentype"), url("../../assets/Fonts/OpenSans-Semibold-webfont.woff") format("woff"), url("../../assets/Fonts/OpenSans-Semibold-webfont.ttf") format("truetype"), url("../../assets/Fonts/OpenSans-Semibold-webfont.svg") format("svg");
+   font-weight: 500;
+   font-style: normal; }
+ @font-face {
+   font-family: 'open_sans';
+   src: url("../../assets/Fonts/OpenSans-Regular-webfont.eot");
+   src: url("../../assets/Fonts/OpenSans-Regular-webfont.eot") format("embedded-opentype"), url("../../assets/Fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../../assets/Fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../../assets/Fonts/OpenSans-Regular-webfont.svg") format("svg");
+   font-weight: 400;
+   font-style: normal; }
+
+ @font-face {
+   font-family: 'open_sans';
+   src: url("../../assets/Fonts/OpenSans-Light-webfont.eot");
+   src: url("../../assets/Fonts/OpenSans-Light-webfont.eot") format("embedded-opentype"), url("../../assets/Fonts/OpenSans-Light-webfont.woff") format("woff"), url("../../assets/Fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("../../assets/Fonts/OpenSans-Light-webfont.svg") format("svg");
+   font-weight: 200;
+   font-style: normal; }
+ 
+ @font-face {
+   font-family: 'open_sans';
+   src: url("../../assets/Fonts/OpenSans-Bold-webfont.eot");
+   src: url("../../assets/Fonts/OpenSans-Bold-webfont.eot") format("embedded-opentype"), url("../../assets/Fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../../assets/Fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../../assets/Fonts/OpenSans-Bold-webfont.svg") format("svg");
+   font-weight: 700;
+   font-style: normal; }
+ /* For image replacement */
+ .ir {
+   display: block;
+   text-indent: -999em;
+   overflow: hidden;
+   background-repeat: no-repeat;
+   text-align: left;
+   direction: ltr; }
+ 
+ .ir br {
+   display: none; }
+ 
+ /* Hide for both screenreaders and browsers:
+    css-discuss.incutio.com/wiki/Screenreader_Visibility */
+ .hidden {
+   display: none;
+   visibility: hidden; }
+ 
+ /* Hide only visually, but have it available for screenreaders: by Jon Neal.
+   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+ .visuallyhidden {
+   border: 0;
+   clip: rect(0 0 0 0);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute;
+   width: 1px; }
+ 
+ /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+ .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+   clip: auto;
+   height: auto;
+   margin: 0;
+   overflow: visible;
+   position: static;
+   width: auto; }
+ 
+ /* Hide visually and from screenreaders, but maintain layout */
+ .invisible {
+   visibility: hidden; }
+ 
+ 
+ /* _____ GLOBAL DEFAULTS _____ */
+ html {
+  box-sizing: border-box;
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  background: #231f20;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+ body {
+   width: 100%;
+   min-height: 100%;
+   margin: 0;
+   padding: 0;
+   font-family: open_sans, Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   line-height: 1.6;
+   color: #626366;
+   background-color: #fff; }
+ 
+ #container {
+   position: relative;
+   margin: 0 auto;
+   padding: 0;
+   width: 100%;
+   min-height: 100%; }
+ 
+ h1 {
+   font-size: 38px;
+   font-size: 2.375rem;
+   line-height: 1;
+   font-weight: 200;
+   text-align: center;
+   padding: 0;
+   margin: 48px 0 34px 0; }
+   h1 + h6 {
+     margin-top: -32px; }
+ 
+ h2 {
+   font-size: 21px;
+   font-size: 1.3125rem;
+   line-height: 1.7;
+   font-weight: 700;
+   margin: 20px 0 5px 0;
+   color: #231f20; }
+   .center_it h2 {
+     color: #ba8748; }
+   .left h2, .right h2 {
+     color: #ba8748;
+     margin-bottom: 25px; }
+ 
+ h3 {
+   font-size: 20px;
+   font-size: 1.25rem;
+   font-weight: 500; }
+ 
+ h4 {
+   font-size: 20px;
+   font-size: 1.25rem; }
+ 
+ h5 {
+   font-size: 14px;
+   font-size: 0.875rem;
+   font-weight: 700;
+   margin-bottom: 15px; }
+ 
+ h6 {
+   font-size: 16px;
+   font-size: 1rem;
+   text-align: center;
+   margin: 0 0 30px 0; }
+ 
+ a,
+ a:visited {
+   color: #ba8748;
+   text-decoration: underline; }
+   a:hover,
+   a:visited:hover {
+     color: #231f20;
+     text-decoration: underline; }
+   a img,
+   a:visited img {
+     outline: none;
+     border: none; }
+ 
+ ul {
+   list-style: disc;
+   list-style-position: outside;
+   margin-left: 20px; }
+ 
+ p {
+   margin: 0 0 15px; }
+ 
+ ul + p {
+   margin-top: 15px; }
+ 
+ b, strong {
+   font-weight: bold; }
+ 
+ i, em {
+   font-style: italic; }
+ 
+ .contain {
+   width: 100%;
+   max-width: 960px;
+   margin: 0 auto; }
+   .contain:after {
+     content: "";
+     display: table;
+     clear: both; }
+ 
+ .screen-reader-text {
+   display: none; }
+ 
+
+  /* _____ GLOBAL DEFAULTS ENDS _____ */
+       .product {
+        background: url(/images/product/banner_product.jpg) top left no-repeat;
+        background-size: cover;
+        height: 330px;
+        line-height: 1.25;
+        padding: 50px 0 0 10px;
+        text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+        font-size: 20px;
+        font-size: 1.25rem;
+      }
+      
+      @media all and (min-width: 600px) and (max-width: 799px) {
+        .product {
+          font-size: 28px;
+          font-size: 1.75rem;
+        }
+      }
+      
+      @media all and (min-width: 800px) {
+        .product {
+          font-size: 30px;
+          font-size: 1.875rem;
+        }
+      }
+      
+      .product .p1 {
+        font-size: 33px;
+        font-size: 2.0625rem;
+        line-height: 0.9;
+        padding-top: 30px;
+      }
+      
+      .product .p2 {
+        font-size: 49px;
+        font-size: 3.0625rem;
+        text-indent: 60px;
+        font-weight: 700;
+        line-height: 0.85;
+      }
+      
+      .product .p3 {
+        font-size: 49px;
+        font-size: 3.0625rem;
+        font-weight: 700;
+        line-height: 0.85;
+      }
+      
+      .product .p4 {
+        text-indent: 50px;
+        line-height: 1.9;
+        margin-bottom: 10px;
+      }
+      
+      @media all and (max-width: 599px) {
+        .product .p1, .product .p2, .product .p3, .product .p4 {
+          text-indent: 0;
+        }
+      }
+  
+ .anniversary {
+   display: block;
+   float: right;
+   margin: 10px 20px 0 0; }
+   @media all and (min-width: 800px) {
+     .anniversary {
+       margin-right: 0; } }
+   @media all and (max-width: 599px) {
+     .anniversary {
+       width: 50px;
+       height: auto; } }
+ 
+ 
+ /* Center Horizontal Menu */
+ #main_nav {
+   position: relative;
+   display: block;
+   background: #231f20; }
+   #main_nav:after {
+     content: "";
+     display: table;
+     clear: both; }
+ 
+ #mnt {
+   position: absolute;
+   right: 10px;
+   top: 50px; }
+   @media all and (min-width: 800px) {
+     #mnt {
+       display: none; } }
+   @media all and (min-width: 600px) and (max-width: 799px) {
+     #mnt {
+       display: block; } }
+   @media all and (max-width: 599px) {
+     #mnt {
+       display: block; } }
+ 
+ #menu_icon {
+   fill: #ba8748;
+   width: 50px;
+   height: 50px; }
+ 
+ .centeredmenu {
+   width: 320px;
+   margin: 0 auto;
+   clear: both;
+   float: left;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   z-index: 1000;
+   /* This makes the dropdown menus appear above the page content below */
+   position: relative;
+   /* Top menu items */ }
+   @media all and (min-width: 600px) and (max-width: 799px) {
+     .centeredmenu {
+       width: 768px; } }
+   @media all and (min-width: 800px) {
+     .centeredmenu {
+       width: 900px; } }
+   .centeredmenu ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     float: left;
+     position: relative; }
+     .centeredmenu ul li {
+       margin: 0;
+       padding: 0;
+       float: left;
+       position: relative;
+       width: 50%; }
+       .centeredmenu ul li a {
+         display: block;
+         margin: 0 auto;
+         font-size: 1em;
+         padding: 1.5em 2em;
+         line-height: 1em;
+         text-decoration: none;
+         color: #fff;
+         font-weight: bold;
+         text-transform: uppercase; }
+       .centeredmenu ul li.active a, .centeredmenu ul li:hover a, .centeredmenu ul li.hover a {
+         color: #ba8748; }
+ 
+ @media all and (min-width: 800px) {
+   .centeredmenu {
+     clear: both;
+     float: left;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     z-index: 1000;
+     /* This makes the dropdown menus appear above the page content below */
+     position: relative;
+     /* Top menu items */ }
+     .centeredmenu ul {
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       float: right;
+       position: relative;
+       right: 50%; }
+       .centeredmenu ul li {
+         margin: 0;
+         padding: 0;
+         float: left;
+         position: relative;
+         left: 50%;
+         width: auto; }
+         .centeredmenu ul li a {
+           display: block;
+           margin: 0;
+           font-size: .8em;
+           padding: 1em 2em;
+           line-height: 1em;
+           text-decoration: none;
+           color: #fff;
+           font-weight: bold;
+           text-transform: uppercase; }
+         .centeredmenu ul li:hover a, .centeredmenu ul li.hover a {
+           color: #ba8748; }
+         .centeredmenu ul li.active a {
+           color: #fff;
+           background: url(../../assets/drip.png) 90% top no-repeat; } }
+ .footermenu {
+   width: 320px;
+   margin: 0 auto;
+   clear: both;
+   float: left;
+   margin: 0;
+   padding: 0;
+   z-index: 1000;
+   /* This makes the dropdown menus appear above the page content below */
+   position: relative;
+   /* Top menu items */ }
+   @media all and (min-width: 600px) and (max-width: 799px) {
+     .footermenu {
+       width: 768px; } }
+   @media all and (min-width: 800px) {
+     .footermenu {
+       width: 900px; } }
+   .footermenu ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     position: relative; }
+     .footermenu ul li {
+       margin: 0;
+       padding: 0;
+       float: left;
+       position: relative;
+       width: 50%; }
+       .footermenu ul li a {
+         display: block;
+         margin: 0;
+         font-size: 1em;
+         padding: 1.5em 2em;
+         line-height: 1em;
+         text-decoration: none;
+         color: #fff;
+         text-transform: uppercase; }
+       .footermenu ul li.active a, .footermenu ul li:hover a, .footermenu ul li.hover a {
+         color: #ba8748; }
+ 
+ @media all and (min-width: 600px) and (max-width: 799px) {
+   .footermenu ul {
+     margin-left: 20px; } }
+ @media all and (min-width: 800px) {
+   .footermenu {
+     position: relative;
+     margin: 0;
+     padding: 0;
+     z-index: 1000;
+     /* Top menu items */ }
+     .footermenu ul {
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       position: relative; }
+       .footermenu ul li {
+         margin: 0;
+         padding: 0;
+         float: left;
+         position: relative;
+         width: auto; }
+         .footermenu ul li a {
+           display: block;
+           margin: 0;
+           font-size: .8em;
+           padding: 0 20px 0 0;
+           line-height: 1em;
+           text-decoration: none;
+           color: #fff;
+           text-transform: uppercase; }
+         .footermenu ul li:hover a, .footermenu ul li.hover a {
+           color: #ba8748; } }
+ #site_header {
+   position: relative;
+   display: block;
+   width: 100%;
+   background: url(../../assets/bg_head.jpg) no-repeat;
+   background-size: cover;
+   border-bottom: 1px #ccc solid; }
+   #site_header:after {
+     content: "";
+     display: table;
+     clear: both; }
+ 
+ #logo {
+   max-width: 182px;
+   height: auto;
+   margin: 15px 0 0 20px; }
+   @media all and (min-width: 800px) {
+     #logo {
+       margin: 15px 0 18px 0; } }
+ 
+ #phone {
+   position: relative;
+   font-size: 21px;
+   font-size: 1.3125rem;
+   color: #231f20;
+   font-weight: 700;
+   line-height: 1.4;
+   text-align: left;
+   margin: 10px 0 20px 20px; }
+   #phone a {
+     color: #231f20;
+     text-decoration: none; }
+   #phone span {
+     color: #ba8748;
+     font-size: 15px;
+     font-size: 0.9375rem;
+     display: block;
+     text-transform: uppercase; }
+     #phone span a {
+       color: #ba8748;
+       text-decoration: underline; }
+   @media all and (min-width: 800px) {
+     #phone {
+       float: right;
+       top: 10px;
+       text-align: right; } }
+ 
+ #footer {
+   position: relative;
+   display: block;
+   width: 100%;
+   background: #231f20;
+   font-size: 11px;
+   font-size: 0.6875rem;
+   line-height: 1.8;
+   padding: 30px 0;
+   margin: 60px 0 0 0;
+   color: #aaa;
+   text-align: left; }
+   #footer:after {
+     content: "";
+     display: table;
+     clear: both; }
+   #footer p {
+     text-align: left !important; }
+   #footer h4 {
+     font-size: 14px;
+     font-size: 0.875rem;
+     font-weight: 500;
+     margin-bottom: 15px;
+     color: #fff; }
+   #contact #footer {
+     margin-top: 0; }
+   #footer a:hover {
+     color: #fff;
+     text-decoration: underline; }
+ 
+ .address {
+   display: inline-block;
+   width: 40.6779661017%;
+   float: left;
+   margin-right: 1.6949152542%;
+   vertical-align: top; }
+ 
+   .signup {
+    display: inline-block;
+    width: 57.63%; /* Rounded for better readability */
+    float: right;
+    vertical-align: top;
+  }
+  
+  .signup a {
+    text-transform: uppercase;
+  }
+  
+ 
+ #foot_nav {
+   width: 100%;
+   float: left;
+   margin-left: 0;
+   margin-right: 0;
+   float: right;
+   margin-right: 0;
+   position: relative;
+   background: #231f20;
+   margin-top: 20px; }
+ 
+ .copyright {
+   clear: both;
+   width: 100%;
+   float: left;
+   margin-left: 0;
+   margin-right: 0;
+   margin: 30px 0;
+   padding: 20px 0;
+   border-top: 1px #555 solid; }
+ 
+ @media all and (max-width: 599px) {
+   .address,
+   .signup {
+     clear: both;
+     width: 100%;
+     float: left;
+     margin-left: 0;
+     margin-right: 0; } }
+ @media all and (max-width: 975px) {
+   .address,
+   .signup {
+     padding: 0 20px; }
+ 
+   .copyright {
+     padding: 20px; } }
+ .bottom_banner {
+   margin: 60px 0 -70px 0; }
+   .bottom_banner img {
+     width: 100%; }
+ 
+ .tel {
+   color: #aaa;
+   text-decoration: none; }
+ 
+ 
+ #masthead {
+   position: relative;
+   display: block;
+   width: 100%; }
+   #masthead:after {
+     content: "";
+     display: table;
+     clear: both; }
+ 
+ .big_div {
+   position: relative;
+   display: block;
+   width: 100%; }
+   .big_div:after {
+     content: "";
+     display: table;
+     clear: both; }
+ 
+ .content {
+   position: relative;
+   display: block;
+   padding: 0;
+   margin: 0 auto; }
+   @media all and (min-width: 800px) {
+     .content {
+       max-width: 960px; } }
+   .content:after {
+     content: "";
+     display: table;
+     clear: both; }
+   .content .left {
+     position: relative;
+     display: block;
+     float: left; }
+     @media all and (min-width: 800px) {
+       .content .left {
+         width: 66.1016949153%;
+         float: left;
+         margin-right: 1.6949152542%; } }
+   .content .right {
+     position: relative;
+     display: block;
+     float: right; }
+     @media all and (min-width: 800px) {
+       .content .right {
+         width: 32.2033898305%;
+         float: right;
+         margin-right: 0; } }
+ 
+ @media all and (max-width: 975px) {
+   .left, .right, .content {
+     padding: 0 20px; } }
+ .content p {
+   line-height: 1.9; }
+ 
+ @media all and (min-width: 600px) and (max-width: 799px) {
+   .first article {
+     width: 380px; } }
+ @media all and (min-width: 800px) {
+   .first article {
+     width: 550px;
+     margin: 0; } }
+ .first article.center_it {
+   width: 80%;
+   margin: 0 auto;
+   text-align: left; }
+ 
+ .center_it {
+   text-align: left; }
+ 
+ .p5 .center_it, .p7 .center_it {
+   width: 80%; }
+ 
+ .map_right {
+   float: right; }
+   @media all and (max-width: 599px) {
+     .map_right {
+       display: none; } }
+ 
+ .map_background {
+   background: url(../../assets/bg_map.jpg) top center no-repeat;
+   background-size: contain; }
+ 
+ .thumbs {
+   margin: 40px 0;
+   width: 100%; }
+   .thumbs div {
+     width: 21.0526315789%;
+     float: left;
+     margin: 0 1em 1.5em 0; }
+     .thumbs div img {
+       width: 100%;
+       height: auto;
+       max-width: 101px; }
+ 
+ .iso {
+   font-size: 1em;
+   font-weight: 500;
+   color: #ef4135;
+   text-align: right;
+   padding-top: 10px; }
+   .iso:after {
+     content: "";
+     display: table;
+     clear: both; }
+ 
+ .spec_link {
+   width: 33%;
+   float: left;
+   margin-right: 1.6949152542%;
+   text-align: center;
+   margin: 20px auto; }
+   .spec_link img {
+     width: 66px;
+     height: auto; }
+   .spec_link h4 {
+     font-size: 14px;
+     font-size: 0.875rem;
+     font-weight: 700;
+     margin-top: 10px; }
+ 
+ 
+ .img_left_team {
+   width: 57.6271186441%;
+   float: left;
+   margin-right: 1.6949152542%; }
+   .img_left_team img {
+     width: 100%;
+     max-width: 100%;
+     padding-right: 10px; }
+ 
+ .item_page_team {
+   width: 40.6779661017%;
+   float: right;
+   margin-right: 0;
+   font-size: 12px;
+   font-size: 0.75rem;
+   border-left: 9px #ba8748 solid;
+   padding-left: 20px; }
+   @media all and (max-width: 599px) {
+     .item_page_team {
+       border-left: none; } }
+ 
+ .background_team {
+   background: #eeefef;
+   padding: 30px 30px 30px 0; }
+ 
+ .item_page_regions {
+   width: 40.6779661017%;
+   float: right;
+   margin-right: 0;
+   font-size: 12px;
+   font-size: 0.75rem;
+   border-left: 9px #ba8748 solid;
+   padding: 0 10px 0 20px; }
+   @media all and (max-width: 599px) {
+     .item_page_regions {
+       border-left: none; } }
+   @media all and (min-width: 600px) and (max-width: 799px) {
+     .item_page_regions {
+       clear: both;
+       width: 100%;
+       float: left;
+       margin-left: 0;
+       margin-right: 0;
+       border-left: none; } }
+   @media all and (max-width: 599px) {
+     .item_page_regions {
+       clear: both;
+       width: 100%;
+       float: left;
+       margin-left: 0;
+       margin-right: 0;
+       border-left: none; } }
+ 
+ .background_regions {
+   background: url(../../assets/bg_map.jpg) left center no-repeat;
+   background-size: contain;
+   padding: 20px 0; }
+   @media all and (min-width: 600px) and (max-width: 799px) {
+     .background_regions {
+       background: none; } }
+   @media all and (max-width: 599px) {
+     .background_regions {
+       background: none; } }
+ 
+ #products .img-fulltext-right{
+   width: 32.2033898305%;
+   float: right;
+   margin-right: 0;
+   margin-left: 8.4745762712%;
+   margin-top: 20px; }
+   #products .img-fulltext-right .img_caption{
+     font-size: 12px;
+     font-size: 0.75rem;
+     margin-top: 6px;
+     border-left: 9px #ba8748 solid;
+     padding-left: 80px;
+     margin-left: -30px;
+     margin-right: 60px; }
+ #products .item-page{
+   width: 57.6271186441%;
+   float: left;
+   margin-right: 1.6949152542%;
+   float: right;
+   margin-right: 0; }
+ @media all and (max-width: 599px) {
+   #products .img-fulltext-right {
+     display: none; }
+   #products .item-page, #capabilities .item-page, #facilities .item-page {
+     width: 100%;
+     float: left;
+     margin-left: 0;
+     margin-right: 0; } }
+ 
+ #products .item-page {
+   margin-top: 18px; }
+
+ .metal_specs p {
+   margin-bottom: 5px;
+   text-align: center; }
+ 
+ #specs {
+   margin-bottom: 7px; }
+ 
+ hr {
+   text-align: center;
+   max-width: 960px; }
+ 
+ .w_logo {
+   margin-bottom: -14px;
+   margin-left: 0;
+   padding-top: 10px; }
+   @media all and (min-width: 1100px) {
+     .w_logo {
+       margin-left: -85px; } }
+
+#masthead {
+    background-image: url('../../assets/home/home_01.jpg');  /* Add your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+    
+
+
+
+
+
+
+
+.h1, .h2, .h3, .h4, .h5,
+.h6, .h7, .h8, .h9, .h10,
+.h11, .h12, .h13, .h14, .h15 {
+  margin-bottom: 10px; /* Adjust the spacing between text elements */
+}
+
+.h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  margin-top: -10px; /* Move text up */
+}
+
+.h2 {
+  font-size: 50px;
+  text-indent: 40px;
+  font-weight: 500;
+  line-height: 0.9; 
+  color: white;
+  margin-top: -10px; /* Move text up */
+}
+
+.h3 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 0.8; 
+  color: white;
+  margin-top: -10px; /* Move text up */
+}
+
+.h3 span {
+  font-size: 30px;
+  font-weight: 400; 
+  color: white;
+  font-weight: lighter; 
+}
+
+.h4 {
+  text-indent: 80px;
+  line-height: 1.9;
+  color: white;
+  font-weight: lighter; 
+  margin-top: -10px; /* Move text up */
+}
+.h4 span{
+    font-weight:600;
+}
+
+
+/* Media Queries for iPad View (768px to 1024px) */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #footer {
+      display: flex; /* Use flexbox for layout */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+      text-align: center; /* Center text */
+  }
+
+  #footer .contain {
+      display: flex; /* Use flexbox inside the footer */
+      flex-wrap: wrap; /* Allow items to wrap */
+      justify-content: center; /* Center items in the footer */
+  }
+
+  #footer .address,
+  #footer .signup {
+      flex: 1 1 300px; /* Allow items to grow and shrink, with a base width */
+      margin: 10px; /* Add margin for spacing */
+  }
+
+  #foot_nav {
+      flex: 1 1 100%; /* Take full width */
+      margin: 10px 0; /* Add vertical margin */
+  }
+
+  #foot_nav .footermenu {
+      display: flex; /* Use flexbox for navigation items */
+      flex-wrap: wrap; /* Allow items to wrap */
+      justify-content: center; /* Center menu items */
+  }
+
+  #foot_nav .footermenu li {
+      margin: 0 10px; /* Horizontal margin for nav items */
+  }
+
+  .copyright {
+      margin-top: 20px; /* Space above copyright text */
+  }
+
+  /* Display centeredmenu on tablet and desktop */
+  .centeredmenu {
+      display: flex; /* Use flexbox for the menu */
+      justify-content: center; /* Center menu items */
+      margin: 10px 0; /* Margin for spacing */
+  }
+}
+
+/* Media Queries for Tablet View (768px to 1024px) */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #main_nav {
+      display: flex; /* Use flexbox for the navigation */
+      justify-content: center; /* Center the navigation items */
+      flex-wrap: wrap; /* Allow items to wrap if needed */
+      padding: 10px 0; /* Add some padding for spacing */
+  }
+
+  .nav.menu {
+      display: flex; /* Use flexbox for the menu */
+      justify-content: center; /* Center the menu items */
+      list-style-type: none; /* Remove default list styling */
+      padding: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+  }
+
+  .nav.menu li {
+      margin: 0 15px; /* Add horizontal margin for spacing between items */
+  }
+
+  .nav.menu li a {
+      text-decoration: none; /* Remove underline from links */
+      color: #000; /* Change the color as needed */
+      font-size: 16px; /* Adjust font size for better visibility */
+  }
+
+  /* Optional: Style for active/current item */
+  .nav.menu li.current a {
+      font-weight: bold; /* Make active link bold */
+      color: #007bff; /* Change color for active link */
+  }
+}
+
+/* Initial state of the navigation for mobile */
+#main_nav {
+  max-height: 0; /* Hide the menu by default */
+  overflow: hidden; /* Prevent overflow */
+  transition: max-height 0.5s ease; /* Transition for sliding effect */
+}
+
+/* Show the menu on mobile */
+#main_nav.visible {
+  max-height: 300px; /* Adjust this value to fit your content */
+}
+
+/* Always show the menu on larger screens */
+@media (min-width: 768px) {
+  #main_nav {
+    display: flex; /* Show the menu as flexbox on desktop */
+    max-height: none; /* No max-height restriction */
+    overflow: visible; /* Ensure overflow is visible */
+  }
+
+  /* Hide the toggle button on larger screens */
+  .mtoggle {
+    display: none; /* Hide the toggle button on larger screens */
+  }
+}
+/* Show the menu and toggle button on mobile */
+@media (max-width: 767px) {
+  #main_nav {
+    display: block; /* Show the menu on mobile */
+  }
+
+  .mtoggle {
+    display: block; /* Show the toggle button on mobile */
+  }
+
+  /* Additional styles for the toggle button */
+  .mtoggle {
+    cursor: pointer; /* Change cursor on hover */
+    /* Add more styling as needed */
+  }
+}
+/* CSS for mobile view */
+@media (max-width: 600px) {
+  #masthead .h1,
+  #masthead .h2,
+  #masthead .h3,
+  #masthead .h4 {
+      text-align: left; /* Ensure all text is left-aligned */
+      margin: 0; /* Remove any default margin that may cause indentation */
+      padding: 0; /* Remove any default padding */
+  }
+}
+
+hr.custom-hr {
+  width: 200%;                    /* Full width within container */
+  height: 1px;                    /* Set height */
+  background-color: #8f8383;       /* Change color as needed */
+  border: none;                    /* Remove border */
+  margin: 15px 0;                  /* Add spacing above and below */
+  opacity: 0.5;                    /* Adjust opacity */
+  position: relative;              /* Allow relative positioning */
+  left: -10px;                     /* Slightly move to the left */
+}
+/* Carousel Container */
+.custom-carousel {
+  display: flex;                          /* Flex container for carousel */
+  overflow: hidden;                      /* Prevent overflow */
+  padding: 0;                            /* Ensure no padding */
+}
+
+/* Owl Carousel Specific Styles */
+.owl-carousel {
+  padding: 0 !important;                  /* Remove internal padding */
+  margin: 0 !important;                   /* Remove margin */
+  line-height: 0 !important;              /* Prevent gaps */
+}
+
+/* Item Container */
+.custom-carousel .item {
+  display: flex;                          /* Flex layout */
+  flex-direction: column;                 /* Stack image and text */
+  align-items: center;                    /* Center elements */
+  justify-content: center;                /* Vertically center elements */
+  width: 190px;                           /* Fixed item width */
+  padding: 0;                             /* Remove padding */
+  margin: 0;                              /* Remove margin */
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;                            /* Set width to 100% for the image */
+  height: auto;                           /* Maintain aspect ratio */
+  object-fit: cover;                      /* Prevent image distortion */
+  margin: 0;                              /* Remove margin */
+  display: block;                         /* Block element to prevent inline gaps */
+}
+
+/* Description Styling */
+.desc {
+  color: #ba8748;                         /* Color for description */
+  text-align: center;                     /* Center text in the description */
+  font-size: 14px;                        /* Font size */
+  margin-top: 5px;                        /* Space above the description */
+  max-width: 190px;                       /* Limit width to 190px */
+  opacity: 0;                             /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;   /* Smooth transition */
+  pointer-events: none;                   /* Prevent interaction when hidden */
+  word-wrap: break-word;                  /* Break long words */
+  white-space: normal;                    /* Allow line breaking */
+}
+
+/* Show description on hover */
+.item:hover .desc {
+  opacity: 1;                             /* Show description */
+  pointer-events: auto;                   /* Enable interaction */
+}
+
+/* Owl Carousel Item Styling */
+.owl-carousel .owl-item {
+  margin: 0 !important;                   /* Remove margins */
+  padding: 0 !important;                  /* Remove padding */
+  width: auto !important;                 /* Allow dynamic width */
+}
+
+/* Ensure images take full width */
+.owl-carousel .owl-item img {
+  width: 100% !important;                 /* Force image to take full width */
+  height: auto;                           /* Maintain aspect ratio */
+  display: block;                         /* Prevent inline gaps */
+}
+
+/* Ensure that the stage fits the container perfectly */
+.owl-carousel .owl-stage-outer {
+  padding: 0 !important;                  /* Remove extra padding */
+  margin: 0 !important;                   /* Remove extra margins */
+  overflow: hidden;                       /* Prevent overflow */
+}
+
+/* Fix any spacing issues due to line-height */
+.owl-carousel .owl-stage {
+  margin: 0 !important;                   /* Remove margins */
+  padding: 0 !important;                  /* Remove padding */
+  white-space: nowrap !important;         /* Prevent wrapping */
+}
+/* Specific override for Owl Carousel items */
+.owl-item {
+  margin: 0 !important;                 /* Remove margins */
+  padding: 0 !important;                /* Remove padding */
+  width: auto !important;               /* Allow dynamic width */
+  display: flex !important;              /* Ensure flex display if needed */
+  flex-direction: column !important;     /* Stack items vertically if needed */
+  align-items: center !important;        /* Center items */
+  justify-content: center !important;    /* Center content */
+  /* Add any other styles needed here */
+}
+
+/* Ensure images take full width without gaps */
+.owl-item img {
+  width: 100% !important;                /* Make images take full width */
+  height: auto !important;               /* Maintain aspect ratio */
+  display: block !important;             /* Block display to avoid inline gaps */
+}
+/* Carousel Container - Add padding for blank space */
+.custom-carousel .owl-stage-outer {
+  padding-left: 140px;   /* Space on the left side */
+  padding-right: 50px;  /* Space on the right side */
+  overflow: hidden;     /* Prevent overflow */
+}
+
+/* Adjust the stage container to handle the padding and center the items */
+.owl-carousel .owl-stage {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 !important;
+}
+
+/* Item Styling */
+.custom-carousel .owl-item {
+  margin: 0 10px;        /* Add space between items */
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+}
+/* Carousel Wrapper */
+.carousel-wrapper {
+  position: relative;                   /* Relative positioning */
+  overflow: hidden;                    /* Hide overflow for animation */
+  padding-left: 140px;                 /* Space for left side */
+  padding-right: 100px;                /* Space for right side */
+  margin-bottom: 20px;                 /* Space below the carousel */
+}
+
+/* Adjusting the stage container to handle the padding */
+.owl-carousel .owl-stage {
+  margin-left: -50px;                  /* Offset for left padding */
+  margin-right: -100px;                /* Offset for right padding */
+}
+
+/* Carousel Container */
+.custom-carousel {
+  display: flex;                        /* Flex container for carousel */
+  overflow: hidden;                    /* Prevent overflow */
+}
+
+/* Item Container */
+.custom-carousel .item {
+  display: flex;                       /* Flex layout */
+  flex-direction: column;              /* Stack image and text */
+  align-items: center;                 /* Center elements */
+  justify-content: center;             /* Vertically center elements */
+  width: 190px;                        /* Fixed item width */
+  padding: 0;                          /* Remove padding */
+  margin: 0;                           /* Remove margin */
+}
+
+/* Product Image */
+.custom-carousel .item img {
+  width: 100%;                         /* Set width to 100% for the image */
+  height: auto;                        /* Maintain aspect ratio */
+  object-fit: cover;                   /* Prevent image distortion */
+  display: block;                      /* Block element to prevent inline gaps */
+}
+
+/* Description Styling */
+.desc {
+  color: #ba8748;                       /* Color for description */
+  text-align: center;                   /* Center text in the description */
+  font-size: 14px;                      /* Font size */
+  margin-top: 5px;                      /* Space above the description */
+  max-width: 190px;                     /* Limit width to 190px */
+  opacity: 0;                           /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+  pointer-events: none;                 /* Prevent interaction when hidden */
+}
+
+/* Show description on hover */
+.item:hover .desc {
+  opacity: 1;                           /* Show description */
+  pointer-events: auto;                 /* Enable interaction */
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+  position: relative;               /* Relative positioning for the carousel */
+  overflow: hidden;                 /* Hide any overflow */
+  margin-bottom: 40px;              /* Space below the carousel */
+}
+
+/* Ensure that the stage fits the container perfectly */
+.owl-carousel {
+  margin: 0 !important;            /* Remove extra margin */
+}
+
+/* Owl Carousel Item Styling */
+.custom-carousel .owl-item {
+  margin: 0 !important;             /* Remove margins */
+  padding: 0 !important;            /* Remove padding */
+  width: 20%;                       /* Set width to allow 5 items side by side */
+  display: flex;                    /* Enable flex layout */
+  justify-content: center;          /* Center items */
+}
+
+/* Ensure images take full width */
+.custom-carousel .owl-item img {
+  width: 100% !important;           /* Force image to take full width */
+  height: auto;                     /* Maintain aspect ratio */
+  display: block;                   /* Prevent inline gaps */
+}
+
+/* Remove width and margin-right for owl-stage */
+.owl-stage {
+  margin: 0 !important;             /* Remove fixed width and margins */
+  padding: 0 !important;            /* Remove any padding */
+  overflow: hidden;                 /* Prevent overflow */
+}
+
+/* Specific override for Owl Carousel items */
+.owl-item {
+  display: flex !important;         /* Ensure flex display */
+  flex-direction: column !important; /* Stack items vertically if needed */
+  align-items: center !important;   /* Center items */
+  justify-content: center !important; /* Center content */
+}
+
+/* Adjust the overall width of the carousel */
+.custom-carousel .owl-stage {
+  display: flex !important;          /* Enable flex display for stage */
+  justify-content: space-between;    /* Space items evenly */
+  width: calc(100% + 20px) !important; /* Adjust width to accommodate margins */
+}
+/* Carousel Wrapper */
+.carousel-wrapper {
+  position: relative;                 /* Relative positioning for the carousel */
+  overflow: hidden;                   /* Hide any overflow */
+  padding-left: 50px;                 /* Space for left side */
+  padding-right: 50px;                /* Space for right side */
+  margin-bottom: 40px;                /* Space below the carousel */
+}
+
+/* Custom Carousel */
+.custom-carousel {
+  display: flex;                      /* Flex container for carousel */
+  overflow: hidden;                   /* Prevent overflow */
+}
+
+/* Owl Carousel Item Styling */
+.custom-carousel .owl-item {
+  margin: 0 10px;                     /* Add space between items */
+  padding: 0;
+  display: flex;                      /* Flex layout for proper alignment */
+  align-items: center;
+  justify-content: center;
+  width: 190px;                       /* Fixed item width for uniformity */
+}
+
+/* Product Image */
+.custom-carousel .item img {
+  width: 100%;                        /* Set width to 100% for the image */
+  height: auto;                       /* Maintain aspect ratio */
+  object-fit: cover;                  /* Prevent image distortion */
+  display: block;                     /* Block element to prevent inline gaps */
+}
+
+/* Adjusting the owl-stage for perfect centering */
+.owl-carousel .owl-stage {
+  display: flex !important;           /* Flex display for owl-stage */
+  justify-content: space-between;     /* Space out items evenly */
+  width: 100% !important;             /* Ensure it takes full width */
+  padding: 0 !important;              /* Remove extra padding */
+}
