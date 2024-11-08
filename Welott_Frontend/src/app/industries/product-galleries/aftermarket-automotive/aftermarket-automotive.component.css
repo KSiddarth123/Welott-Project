@@ -911,37 +911,6 @@
  #product-galleries p,
  #aftermarket-automotive p {
    text-align: center; }
- 
-
-   /* Masthead section */
-   .slide-content {
-/*     display: flex; */
-    justify-content: space-between; /* Align text to the left and logo to the right */
-    align-items: center; /* Center align vertically */
-    padding: 20px; /* Optional padding for aesthetics */
-    height: 330px; /* Set a height for the slides */
-    background-size: cover; /* Cover the entire slide */
-    background-position: center; /* Center the background image */
-  }
-  
-  .slide1 {
-    background-image: url('../../../../assets/home/home_01.jpg'); /* Background for Slide 1 */
-  }
-  
-  .slide2 {
-    background-image: url('../../../../assets/home/home_03.jpg'); /* Background for Slide 2 */
-  }
-  
-  .slide3 {
-    background-image: url('../../../../assets/home/home_04.jpg'); /* Background for Slide 3 */
-  }
-  .slide4{
-    background-image: url('../../../../assets/home/home_02.jpg'); /* Background for Slide 3 */
-
-  }
-
-
-
   
   .logo {
     position: absolute;
@@ -950,14 +919,6 @@
     transform: translate(300%, -70%); /* Adjust the translate value to shift it slightly to the right */
     max-width: 120px; /* Adjust logo size */
     height: auto;
-}
-.owl-carousel .owl-item {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.owl-carousel .owl-item.active {
-  opacity: 1;
 }
 
 /* Container: Flexbox alignment for vertical layout */
