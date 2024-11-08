@@ -1,4 +1,24 @@
-@font-face {
+html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline; }
+ 
+ @font-face {
    font-family: 'open_sans';
    src: url("../../assets/Fonts/OpenSans-Semibold-webfont.eot");
    src: url("../../assets/Fonts/OpenSans-Semibold-webfont.eot") format("embedded-opentype"), url("../../assets/Fonts/OpenSans-Semibold-webfont.woff") format("woff"), url("../../assets/Fonts/OpenSans-Semibold-webfont.ttf") format("truetype"), url("../../assets/Fonts/OpenSans-Semibold-webfont.svg") format("svg");
@@ -24,6 +44,148 @@
    src: url("../../assets/Fonts/OpenSans-Bold-webfont.eot") format("embedded-opentype"), url("../../assets/Fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../../assets/Fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../../assets/Fonts/OpenSans-Bold-webfont.svg") format("svg");
    font-weight: 700;
    font-style: normal; }
+
+ 
+ body {
+   width: 100%;
+   min-height: 100%;
+   margin: 0;
+   padding: 0;
+   font-family: open_sans, Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   line-height: 1.6;
+   color: #626366;
+   background-color: #fff; }
+ 
+ #container {
+   position: relative;
+   margin: 0 auto;
+   padding: 0;
+   width: 100%;
+   min-height: 100%; 
+  }
+ 
+ h1 {
+   font-size: 38px;
+   font-size: 2.375rem;
+   line-height: 1;
+   font-weight: 200;
+   text-align: center;
+   padding: 0;
+   margin: 48px 0 34px 0; }
+   h1 + h6 {
+     margin-top: -32px; }
+ 
+ h2 {
+   font-size: 21px;
+   font-size: 1.3125rem;
+   line-height: 1.7;
+   font-weight: 700;
+   margin: 20px 0 5px 0;
+   color: #231f20; }
+   .center_it h2 {
+     color: #ba8748; }
+   .left h2, .right h2 {
+     color: #ba8748;
+     margin-bottom: 25px; }
+ 
+ h3 {
+   font-size: 20px;
+   font-size: 1.25rem;
+   font-weight: 500; }
+ 
+ h4 {
+   font-size: 20px;
+   font-size: 1.25rem; }
+ 
+ h5 {
+   font-size: 14px;
+   font-size: 0.875rem;
+   font-weight: 700;
+   margin-bottom: 15px; }
+ 
+ h6 {
+   font-size: 16px;
+   font-size: 1rem;
+   text-align: center;
+   margin: 0 0 30px 0; }
+ 
+ a,
+ a:visited {
+   color: #ba8748;
+   text-decoration: underline; }
+   a:hover,
+   a:visited:hover {
+     color: #231f20;
+     text-decoration: underline; }
+   a img,
+   a:visited img {
+     outline: none;
+     border: none; }
+ 
+ ul {
+   list-style: disc;
+   list-style-position: outside;
+   margin-left: 20px; }
+ 
+ p {
+   margin: 0 0 15px; }
+ 
+ ul + p {
+   margin-top: 15px; }
+ 
+ b, strong {
+   font-weight: bold; }
+ 
+ i, em {
+   font-style: italic; }
+ 
+ .contain {
+   width: 100%;
+   max-width: 960px;
+   margin: 0 auto; }
+   .contain:after {
+     content: "";
+     display: table;
+     clear: both; }
+ 
+ .screen-reader-text {
+   display: none; }
+ 
+ .button {
+   margin: 10px 0 !important;
+   padding: 6px 18px !important;
+   border: 1px #fc0 solid !important;
+   outline: none;
+   font-family: open_sans, Helvetica, Arial, sans-serif !important;
+   color: #fff !important;
+   display: inline-block !important;
+   text-decoration: none !important; }
+   .button:hover {
+     border: 1px #555 solid !important; }
+ 
+ .submit {
+   background: #555 !important; }
+ 
+ .gray {
+   background: #aaa !important; }
+ 
+ .grayDark {
+   background: #555 !important; }
+ 
+ .white {
+   color: #fff; }
+ 
+ .steel {
+   color: #626366; }
+ 
+ .iron {
+   color: #231f20; }
+ 
+ .trends {
+   color: #ba8748; }
+ 
+ 
  .anniversary {
    display: block;
    float: right;
@@ -597,71 +759,7 @@
      font-size: 0.875rem;
      font-weight: 700;
      margin-top: 10px; }
- 
- #about .item-page {
-   clear: both;
-   width: 100%;
-   float: left;
-   margin-left: 0;
-   margin-right: 0; }
- 
- 
- 
 
- 
- .background_team {
-   background: #eeefef;
-   padding: 30px 30px 30px 0; }
- 
- .item_page_regions {
-   width: 40.6779661017%;
-   float: right;
-   margin-right: 0;
-   font-size: 12px;
-   font-size: 0.75rem;
-   border-left: 9px #ba8748 solid;
-   padding: 0 10px 0 20px; }
-   @media all and (max-width: 599px) {
-     .item_page_regions {
-       border-left: none; } }
-   @media all and (min-width: 600px) and (max-width: 799px) {
-     .item_page_regions {
-       clear: both;
-       width: 100%;
-       float: left;
-       margin-left: 0;
-       margin-right: 0;
-       border-left: none; } }
-   @media all and (max-width: 599px) {
-     .item_page_regions {
-       clear: both;
-       width: 100%;
-       float: left;
-       margin-left: 0;
-       margin-right: 0;
-       border-left: none; } }
- 
- .background_regions {
-   background: url(../../assets/regions_map\ \(1\).jpg) left center no-repeat;
-   background-size: contain;
-   padding: 10px 0; }
-   @media all and (min-width: 600px) and (max-width: 799px) {
-     .background_regions {
-       background: none; } }
-   @media all and (max-width: 599px) {
-     .background_regions {
-       background: none; } }
-
-.custom.about .a1,
-.custom.about .a2,
-.custom.about .a3,
-.custom.about .a4 {
-    color: white;
-}
- .mid_image_center {
-   max-width: 100%;
-   margin: 10px auto;
-   display: block; }
  
  #contact .contact_bg {
    background: url(../../assets/bg_contact.jpg) center center no-repeat;
@@ -895,7 +993,7 @@ border: 2px solid rgb(235, 52, 28);
  
   display: block;
   position: absolute;
-  top: 750px; /* Adjust this as needed */
+  top: 752px; /* Adjust this as needed */
   left: 128px; /* Adjust this as needed */
 }
 
@@ -987,7 +1085,7 @@ border: 2px solid rgb(235, 52, 28);
   max-width: 200px;
   display: block;
   position: absolute;
-  top: 750px;
+  top: 752px;
   left: 131px;
   z-index: 10;
 }
