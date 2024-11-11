@@ -894,3 +894,7 @@ body.lightbox-open {
   }
 }
 
+.overlay_content{
+  text-align: center;
+  color: white;
+}
