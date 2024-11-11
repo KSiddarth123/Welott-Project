@@ -888,3 +888,7 @@ body.lightbox-open {
     padding: 20px;
   }
 }
+.overlay_content{
+  text-align: center;
+  color: white;
+}
